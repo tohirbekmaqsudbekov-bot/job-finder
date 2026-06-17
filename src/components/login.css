@@ -1,0 +1,211 @@
+/* Butun ekranni egallaydi */
+.login-container {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #101427 0%, #1E223D 50%, #121832 100%);
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* O'rtadagi qora quti */
+.login-box {
+    background: rgba(30, 32, 57, 0.92);
+    border: 1px solid #2b3155;
+    border-radius: 20px;
+    padding: 40px;
+    width: 100%;
+    max-width: 440px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    animation: slideUp 0.5s ease;
+}
+
+/* Animatsiya - pastdan yuqoriga chiqish */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Yuqoridagi logo */
+.login-logo {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 20px;
+    background: linear-gradient(135deg, #F54F1B 0%, #d24416 100%);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    color: #fff;
+    box-shadow: 0 10px 30px rgba(245, 79, 27, 0.3);
+}
+
+/* Sarlavha */
+.login-title {
+    text-align: center;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.login-subtitle {
+    text-align: center;
+    color: #8C98BB;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+/* Forma */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.input-group label {
+    color: #D7D9EA;
+    font-size: 13px;
+    font-weight: 500;
+    margin-left: 4px;
+}
+
+/* Input + ikonka uchun wrapper */
+.input-wrapper-login {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Ikonka (chap tomonda) */
+.input-icon {
+    position: absolute;
+    left: 14px;
+    color: #95A0C1;
+    font-size: 14px;
+    pointer-events: none;
+}
+
+/* Input maydoni */
+.input-wrapper-login input {
+    width: 100%;
+    padding: 12px 14px 12px 42px;
+    background: #242a4b;
+    border: 1px solid #2b3155;
+    border-radius: 10px;
+    color: #F5F7FF;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+    box-sizing: border-box;
+}
+
+.input-wrapper-login input:focus {
+    border-color: #F54F1B;
+}
+
+.input-wrapper-login input::placeholder {
+    color: #95A0C1;
+}
+
+/* Ko'z ikonkasi (parolni ko'rsatish) */
+.toggle-password {
+    position: absolute;
+    right: 14px;
+    background: transparent;
+    border: none;
+    color: #95A0C1;
+    cursor: pointer;
+    padding: 4px;
+    font-size: 14px;
+}
+
+.toggle-password:hover {
+    color: #D7D9EA;
+}
+
+/* Xato xabari */
+.error-message {
+    background: rgba(239, 68, 68, 0.1);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    color: #EF5F3D;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Asosiy tugma */
+.submit-btn {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #F54F1B 0%, #d24416 100%);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-top: 8px;
+}
+
+.submit-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 20px rgba(245, 79, 27, 0.3);
+}
+
+/* Pastki "Hisobingiz bormi?" qismi */
+.switch-mode {
+    text-align: center;
+    margin-top: 24px;
+    color: #95A0C1;
+    font-size: 14px;
+}
+
+.switch-mode button {
+    background: transparent;
+    border: none;
+    color: #F54F1B;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 6px;
+    font-size: 14px;
+}
+
+.switch-mode button:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Google Login wrapper */
+.google-login-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.google-login-wrapper>div {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+}

@@ -1,0 +1,34 @@
+{
+  "name": "job-finder",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.95.1",
+    "@google/generative-ai": "^0.24.1",
+    "@react-oauth/google": "^0.13.5",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.38.0",
+    "jwt-decode": "^4.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^3.6.0"
+  },
+  "devDependencies": {
+    
+    "@types/node": "^25.6.2",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    
+    "postcss": "^8.4.24",
+    "autoprefixer": "^10.4.14",
+    "typescript": "^5.5.3",
+    "vite": "^6.0.0"
+  }
+}
