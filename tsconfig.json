@@ -10,6 +10,7 @@
     "module": "ESNext",
     "skipLibCheck": true,
     "types": [
+      "vite/client",
       "node"
     ],
     /* Bundler mode */
@@ -21,7 +22,9 @@
     "jsx": "react-jsx",
     /* Path mapping */
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": [
+        "./src/*"
+      ]
     },
     /* Linting */
     "strict": true,
